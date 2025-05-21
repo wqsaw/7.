@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Favorite Drinks (Horizontal)</title>
+    <style>
+        /* Optional: Add some basic styling for better visual separation */
+        table {
+            border-collapse: collapse; /* Merges cell borders */
+            width: 100%; /* Makes the table take full width */
+        }
+        th, td {
+            border: 1px solid black; /* Cell borders */
+            padding: 8px; /* Spacing inside cells */
+            text-align: center; /* Center align text */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>我喜歡的飲料 (橫式)</h2>
+    <script>
+        let drinks = ['紅茶', '林蒙愛玉', '珍珠奶茶', '奶茶', '咖啡', '奶綠', '綠豆沙牛奶'];
+
+        document.write('<table border="1">');
+
+        // First row for numbers (飲料1, 飲料2, etc.)
+        document.write('<tr>');
+        for (let i = 0; i < drinks.length; i++) {
+            document.write('<th>飲料' + (i + 1) + '</th>'); // Use <th> for header cells
+        }
+        document.write('</tr>');
+
+        // Second row for drink names
+        document.write('<tr>');
+        for (let i = 0; i < drinks.length; i++) {
+            document.write('<td>' + drinks[i] + '</td>');
+        }
+        document.write('</tr>');
+
+        document.write('</table>');
+    </script>
+
+</body>
+</html>

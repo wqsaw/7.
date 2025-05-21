@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Sum and Average</title>
+</head>
+<body>
+
+    <script>
+        // 建立資料 (Establish Data)
+        let grades = [70, 50, 84];
+        grades.push(35);
+        grades.push(100);
+
+        console.log("Array Length: " + grades.length); // Outputs array length to console
+
+        document.write("<h2>Grades:</h2>");
+        // 取得資料，利用for迴圈 (Retrieve Data, using a for loop)
+        for (let i = 0; i < grades.length; i++) {
+            document.write(grades[i] + "<br>");
+        }
+
+        // 計算總和與平均數 (Calculate Sum and Average)
+        let sum = 0;
+        for (let i = 0; i < grades.length; i++) {
+            sum += grades[i]; // Add each grade to the sum
+        }
+
+        let average = sum / grades.length;
+
+        document.write("<h2>Summary:</h2>");
+        document.write("Total Sum of Grades: " + sum + "<br>");
+        document.write("Average Grade: " + average.toFixed(2) + "<br>"); // .toFixed(2) for 2 decimal places
+
+    </script>
+
+</body>
+</html>

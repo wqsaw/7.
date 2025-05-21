@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Ensure full viewport height */
+            margin: 0;
+            background-color: #7ca39e; /* Dark brown background for the left side (approximate) */
+        }
+
+        .container {
+            display: flex;
+            align-items: center; /* Vertically align items */
+            justify-content: center; /* Horizontally center items */
+            width: 100%; /* Take full width */
+        }
+
+        .left-panel {
+            background-color: #c79b9a; /* Dark brown, approximate */
+            padding: 20px;
+            text-align: center;
+            color: white; /* White text for contrast */
+            flex: 0 0 30%; /* Take up about 30% of the width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Make it full height */
+            box-sizing: border-box; /* Include padding in width/height */
+        }
+
+        .circle {
+            background-color: black;
+            border-radius: 50%; /* Makes it a circle */
+            width: 200px; /* Adjust size as needed */
+            height: 200px; /* Should be same as width for a perfect circle */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .right-panel {
+            background-color: white; /* White background for the table area */
+            padding: 20px;
+            flex-grow: 1; /* Allows it to take up remaining space */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        table {
+            border-collapse: collapse; /* Merges cell borders */
+            width: auto; /* Adjusts to content */
+            font-size: 1.2em; /* Larger text for readability */
+        }
+
+        th, td {
+            border: 2px solid black; /* Thicker borders as in the image */
+            padding: 10px 20px; /* Padding inside cells */
+            text-align: center; /* Center align text */
+            white-space: nowrap; /* Prevent text wrapping in cells */
+        }
+
+        th {
+            background-color: #f2f2f2; /* Light grey for headers if desired, though image is white */
+            font-weight: normal; /* Keep header text similar weight to data */
+        }
+    </style>
+</head>
+<body>
+
+
+        <div class="right-panel">
+            <table>
+                <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <th>國文</th>
+                        <th>英文</th>
+                        <th>數學</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>王大同</td>
+                        <td>85</td>
+                        <td>88</td>
+                        <td>77</td>
+                    </tr>
+                    <tr>
+                        <td>林麥可</td>
+                        <td>99</td>
+                        <td>86</td>
+                        <td>89</td>
+                    </tr>
+                    <tr>
+                        <td>張淑芬</td>
+                        <td>75</td>
+                        <td>92</td>
+                        <td>86</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
